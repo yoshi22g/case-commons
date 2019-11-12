@@ -100,9 +100,10 @@ padding:0;
 
 .impact-grid-parent li {
   background-color: grey;
-  border: 1px solid black;
   box-sizing: border-box;
-  padding:4px;
+  padding:10px;
+  color: white;
+  font-size: 1.2rem;
 }
 
 .impact-1 { grid-area: 1 / 1 / 2 / 2; }
@@ -124,11 +125,16 @@ padding:0;
 		opacity: 0;
 		transform: translateX(-40px);
 		transition: all 1s ease-in-out;
-	}
-	#reveal1.visible {
+}
+#reveal1.visible {
 		opacity: 1;
 		-webkit-transform: none;
 			 -moz-transform: none;
 				-ms-transform: none;
 				 -o-transform: none;
 						transform: none;
+}
+
+.our-expertise ul li {
+  margin-bottom: 20px;
+}
