@@ -7,6 +7,8 @@ html {
 
 body {
   font-size: 2vw;
+  line-height: 1.15;
+  letter-spacing: -0.2px;
 }
 
 blockquote {
@@ -48,8 +50,9 @@ header ul li {
   height: 90vh;
   position: fixed;
   overflow: hidden;
-  background-color: grey;
+  background-color: #e93526;
   bottom:0;
+  color: #ffffff;
 }
 
 #right-side-content {
