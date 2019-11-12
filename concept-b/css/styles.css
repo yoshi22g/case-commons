@@ -1,9 +1,19 @@
-img {
-  min-width: 80px;
-  min-height: 80px;
-  background-color: grey;
-  border: none;
-  display: block;
+html {
+  font-family: 'nimbus-sans',sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 100%;
+}
+
+body {
+  font-size: 2vw;
+}
+
+blockquote {
+  font-family: 'mencken-std', 'Times New Roman', serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3rem;
 }
 
 header {
@@ -23,11 +33,14 @@ header div {
 header ul {
   list-style: none;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  padding: 0;
 }
 
 header ul li {
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 
 #left-side-content {
@@ -45,4 +58,50 @@ header ul li {
   position:absolute;
   right:0;
   top:10vh;
+  box-sizing: border-box;
 }
+
+#right-side-content section {
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.color-block {
+  background-color: #cccccc;
+}
+
+.logo-container {
+  height:8vh;
+  box-sizing: border-box;
+  padding:3px;
+}
+
+#cc-logo {
+  max-height: 100%;
+}
+
+.impact-grid-parent {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(4, 1fr);
+grid-column-gap: 15px;
+grid-row-gap: 15px;
+list-style: none;
+padding:0;
+}
+
+.impact-grid-parent li {
+  background-color: grey;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding:4px;
+}
+
+.impact-1 { grid-area: 1 / 1 / 2 / 2; }
+.impact-2 { grid-area: 1 / 2 / 2 / 3; }
+.impact-3 { grid-area: 2 / 1 / 3 / 2; }
+.impact-4 { grid-area: 2 / 2 / 3 / 3; }
+.impact-5 { grid-area: 3 / 1 / 4 / 2; }
+.impact-6 { grid-area: 3 / 2 / 4 / 3; }
+.impact-7 { grid-area: 4 / 1 / 5 / 2; }
+.impact-8 { grid-area: 4 / 2 / 5 / 3; }
