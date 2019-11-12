@@ -15,7 +15,8 @@ blockquote {
   font-family: 'mencken-std', 'Times New Roman', serif;
   font-weight: 400;
   font-style: italic;
-  font-size: 3rem;
+  font-size: 4rem;
+  margin-top:15px;
 }
 
 header {
@@ -50,7 +51,7 @@ header ul li {
   height: 90vh;
   position: fixed;
   overflow: hidden;
-  background-color: #e93526;
+  background-color: grey;
   bottom:0;
   color: #ffffff;
 }
@@ -121,12 +122,12 @@ padding:0;
   display: none;
 }
 
-#reveal1 {
+.reveal1, .reveal2 {
 		opacity: 0;
 		transform: translateX(-40px);
 		transition: all 1s ease-in-out;
 }
-#reveal1.visible {
+.reveal1.visible, .reveal2.visible {
 		opacity: 1;
 		-webkit-transform: none;
 			 -moz-transform: none;
@@ -137,4 +138,9 @@ padding:0;
 
 .our-expertise ul li {
   margin-bottom: 20px;
+}
+
+.reveal1 {
+  padding-left: 15px;
+  margin-bottom:5px;
 }
