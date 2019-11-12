@@ -69,6 +69,11 @@ header ul li {
   box-sizing: border-box;
 }
 
+#left-side-content .quote {
+  position: absolute;
+  bottom: 10px;
+}
+
 .color-block {
   background-color: #cccccc;
 }
@@ -108,3 +113,22 @@ padding:0;
 .impact-6 { grid-area: 3 / 2 / 4 / 3; }
 .impact-7 { grid-area: 4 / 1 / 5 / 2; }
 .impact-8 { grid-area: 4 / 2 / 5 / 3; }
+
+/* **** ***/
+
+.hide {
+  display: none;
+}
+
+#reveal1 {
+		opacity: 0;
+		transform: translateX(-40px);
+		transition: all 1s ease-in-out;
+	}
+	#reveal1.visible {
+		opacity: 1;
+		-webkit-transform: none;
+			 -moz-transform: none;
+				-ms-transform: none;
+				 -o-transform: none;
+						transform: none;
